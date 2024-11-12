@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: fastapi-app
+    runtime: docker
+    repo: https://github.com/TU_USUARIO/fastapi-cicd-demo.git
+    region: ohio
+    plan: free
+    branch: main
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
