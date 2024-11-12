@@ -2,7 +2,7 @@ services:
   - type: web
     name: fastapi-app
     runtime: docker
-    repo: https://github.com/TU_USUARIO/fastapi-cicd-demo.git
+    repo: https://github.com/JulianAlvarez00/fastapi-cicd-demo.git
     region: ohio
     plan: free
     branch: main
