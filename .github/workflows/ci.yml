@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: CI Pipeline
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
     - name: Run tests
       run: |
         pytest
-        
+
   build:
     needs: test
     runs-on: ubuntu-latest
